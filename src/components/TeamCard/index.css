@@ -1,0 +1,23 @@
+.team-card-hyperlink {
+  text-decoration: none;
+}
+
+.team-card-item {
+  width: 30%;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.team-image {
+  width: 25%;
+  margin-right: 8px;
+}
+
+.team-name {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
