@@ -31,7 +31,7 @@ class Home extends Component {
   }
 
   render() {
-    const {teamList, isLoaderStarted}
+    const {teamList, isLoaderStarted} = this.state
 
     return (
       <div className="bg-container">

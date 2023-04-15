@@ -8,9 +8,11 @@ import './App.css'
 
 const App = () => (
   <>
-    <Home />
-    <TeamMatches />
-    <NotFound />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route path="/team-matches/:id" component={TeamMatches} />
+      <Route component={NotFound} />
+    </Switch>
   </>
 )
 
