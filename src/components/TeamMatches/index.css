@@ -1,1 +1,92 @@
-/* Write your CSS here */
+.team-container {
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rcb {
+  background-image: linear-gradient(to top, #a4261d, #1e293b);
+}
+
+.kkr {
+  background-image: linear-gradient(to top, #f26d22, #13418b);
+}
+
+.kxp {
+  background-image: linear-gradient(to top, #1e293b, #d91c1f);
+}
+
+.csk {
+  background-image: linear-gradient(to top, #1e293b, #f7db00);
+}
+
+.rr {
+  background-image: linear-gradient(to top, #ffffff33, #da237b);
+}
+
+.mi {
+  background-image: linear-gradient(to top, #5755a7, #13418b);
+}
+
+.sh {
+  background-image: linear-gradient(to top, #f26d22, #a4261d);
+}
+
+.dc {
+  background-image: linear-gradient(to top, #4f5db0, #0f172a);
+}
+
+.latest-team-banner-image {
+  width: 80%;
+  height: 350px;
+  margin-top: 15px;
+}
+
+.latest-match-para {
+  width: 80%;
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.recent-match-card {
+  width: 80%;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .latest-team-banner-image {
+    width: 95%;
+  }
+
+  .latest-match-para {
+    width: 95%;
+    font-size: 12px;
+  }
+
+  .recent-match-card {
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  .latest-match-para {
+    font-size: 16px;
+  }
+}

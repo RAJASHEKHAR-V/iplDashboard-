@@ -1,1 +1,80 @@
-/* Write your CSS here */
+.recent-match-item {
+  width: 32%;
+  height: 550px;
+  background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.team-compete-logo {
+  width: 40%;
+  height: 40%;
+}
+
+.team-compete-heading {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.team-result-status {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.team-match-status {
+  font-family: 'Bree serif';
+  font-weight: 500;
+}
+
+.green-color {
+  color: #18ed66;
+}
+
+.red-color {
+  color: #e31a1a;
+}
+
+@media (max-width: 767px) {
+  .recent-match-item {
+    width: 46%;
+  }
+
+  .team-compete-logo {
+    width: 48%;
+    height: 45%;
+  }
+
+  .team-compete-heading {
+    font-size: 20px;
+  }
+
+  .team-result-status {
+    font-size: 12px;
+  }
+
+  .team-match-status {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-compete-heading {
+    font-size: 25px;
+  }
+
+  .team-result-status {
+    font-size: 14px;
+  }
+
+  .team-match-status {
+    font-size: 25px;
+  }
+}

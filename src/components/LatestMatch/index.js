@@ -18,7 +18,7 @@ const LatestMatch = props => {
     <div className="latest-team-card">
       <div className="compete-team-card">
         <div className="compete-team-status-card">
-          <h1 className="compete-team-heading">{competingTeam}</h1>
+          <p className="compete-team-heading">{competingTeam}</p>
           <p className="compete-team-date">{date}</p>
           <p className="compete-team-venue">{venue}</p>
           <p className="team-result">{result}</p>

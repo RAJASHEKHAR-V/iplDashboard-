@@ -3,6 +3,7 @@ import './index.css'
 const MatchCard = props => {
   const {recentMatch} = props
   const {result, competingTeam, competingTeamLogo, matchStatus} = recentMatch
+  const isWinOrLose = matchStatus === 'Won' ? 'green-color' : 'red-color'
 
   return (
     <li className="recent-match-item">
@@ -11,9 +12,9 @@ const MatchCard = props => {
         className="team-compete-logo"
         alt={`competing team ${competingTeam}`}
       />
-      <h1 className="team-compete-heading">{competingTeam}</h1>
+      <p className="team-compete-heading">{competingTeam}</p>
       <p className="team-result-status">{result}</p>
-      <h1 className="team-match-status">{matchStatus}</h1>
+      <p className={`team-match-status ${isWinOrLose}`}>{matchStatus}</p>
     </li>
   )
 }

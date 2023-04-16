@@ -61,22 +61,23 @@ class TeamMatches extends Component {
   render() {
     const {matchDetails, isLoaderStarted} = this.state
     const {teamBannerUrl, latestMatchDetails, recentMatches} = matchDetails
-    const colorGradients = ['RCB', 'KKR', 'KXIP', 'CSK', 'RR', 'MI', 'SH', 'DC']
+    const colorGradients = ['rcb', 'kkr', 'kxp', 'csk', 'rr', 'mi', 'sh', 'dc']
     const {match} = this.props
     const {params} = match
     const {id} = params
     const addMatchColorGradient = colorGradients.filter(
-      eachColor => eachColor === id,
-    )
+      eachColor => eachColor === id.toLowerCase(),
+    )[0]
 
     return (
       <div className={`team-container ${addMatchColorGradient}`}>
         {isLoaderStarted ? (
-          <div data-testid="loader">
+          // eslint-disable-next-line react/no-unknown-property
+          <div testid="loader">
             <Loader type="Oval" color="#ffffff" width={50} height={50} />
           </div>
         ) : (
-          <>
+          <div className="team-body">
             <img
               src={teamBannerUrl}
               className="latest-team-banner-image"
@@ -90,12 +91,12 @@ class TeamMatches extends Component {
             <ul className="recent-match-card">
               {recentMatches.map(eachRecentMatch => (
                 <MatchCard
-                  key={recentMatches.id}
+                  key={eachRecentMatch.id}
                   recentMatch={eachRecentMatch}
                 />
               ))}
             </ul>
-          </>
+          </div>
         )}
       </div>
     )

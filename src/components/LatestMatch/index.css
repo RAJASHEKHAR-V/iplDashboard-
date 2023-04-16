@@ -1,1 +1,228 @@
-/* Write your CSS here */
+.latest-team-card {
+  width: 80%;
+  background-color: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+  border-radius: 5px;
+}
+
+.compete-team-card {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.compete-team-status-card {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.compete-team-heading {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.compete-team-date {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.compete-team-venue {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.team-result {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.compete-team-logo {
+  width: 45%;
+}
+
+.latest-team-innings-details-card {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.first-inning-heading {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.first-innings-para {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.second-innings-heading {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.second-innings-para {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.man-of-the-match-heading {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.man-of-the-match-para {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.umpires-heading {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.umpires-para {
+  font-family: 'Bree serif';
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .latest-team-card {
+    width: 95%;
+    flex-direction: column;
+    padding: 0px 0px;
+  }
+
+  .compete-team-card {
+    width: 100%;
+    border-bottom: 2px solid #475569;
+    padding: 0px 10px;
+  }
+
+  .compete-team-status-card {
+    width: 50%;
+  }
+
+  .compete-team-heading {
+    font-size: 20px;
+  }
+
+  .compete-team-date {
+    font-size: 16px;
+  }
+
+  .compete-team-venue {
+    font-size: 12px;
+  }
+
+  .team-result {
+    font-size: 12px;
+  }
+
+  .latest-team-innings-details-card {
+    width: 100%;
+    padding: 0px 10px;
+    align-items: flex-start;
+  }
+
+  .first-inning-heading {
+    font-size: 14px;
+  }
+
+  .first-innings-para {
+    font-size: 12px;
+  }
+
+  .second-innings-heading {
+    font-size: 14px;
+  }
+
+  .second-innings-para {
+    font-size: 12px;
+  }
+
+  .man-of-the-match-heading {
+    font-size: 14px;
+  }
+
+  .man-of-the-match-para {
+    font-size: 12px;
+  }
+
+  .umpires-heading {
+    font-size: 14px;
+  }
+
+  .umpires-para {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .compete-team-heading {
+    font-size: 30px;
+  }
+
+  .compete-team-date {
+    font-size: 20px;
+  }
+
+  .compete-team-venue {
+    font-size: 14px;
+  }
+
+  .team-result {
+    font-size: 14px;
+  }
+
+  .first-inning-heading {
+    font-size: 20px;
+  }
+
+  .first-innings-para {
+    font-size: 14px;
+  }
+
+  .second-innings-heading {
+    font-size: 20px;
+  }
+
+  .second-innings-para {
+    font-size: 14px;
+  }
+
+  .man-of-the-match-heading {
+    font-size: 20px;
+  }
+
+  .man-of-the-match-para {
+    font-size: 14px;
+  }
+
+  .umpires-heading {
+    font-size: 20px;
+  }
+
+  .umpires-para {
+    font-size: 14px;
+  }
+}

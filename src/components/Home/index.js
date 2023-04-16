@@ -18,7 +18,8 @@ class Home extends Component {
   getTeamDetails = async () => {
     const response = await fetch('https://apis.ccbp.in/ipl')
     const data = await response.json()
-    const newTeamList = data.map(eachTeam => ({
+    console.log(data)
+    const newTeamList = data.teams.map(eachTeam => ({
       name: eachTeam.name,
       id: eachTeam.id,
       teamImageUrl: eachTeam.team_image_url,
@@ -32,12 +33,14 @@ class Home extends Component {
 
   render() {
     const {teamList, isLoaderStarted} = this.state
+    console.log(isLoaderStarted)
 
     return (
       <div className="bg-container">
         {isLoaderStarted ? (
-          <div data-testid="loader">
-            <Loader type="Oval" color="#ffffff" width={50} height={50} />
+          // eslint-disable-next-line react/no-unknown-property
+          <div testid="loader">
+            <Loader type="Oval" color="#ffffff" height={50} width={50} />
           </div>
         ) : (
           <>
